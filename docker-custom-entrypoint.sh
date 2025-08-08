@@ -38,6 +38,10 @@ fi
 # ✅ Add this line to allow require('puppeteer') to work
 #export NODE_PATH="/opt/n8n-custom-nodes/node_modules"
 
+# ✅ Puppeteer 기본 실행 옵션 보장 (환경변수 없을 때만)
+export PUPPETEER_ARGS="${PUPPETEER_ARGS:---no-sandbox --disable-setuid-sandbox --disable-dev-shm-usage}"
+
+
 print_banner
 
 # Execute the original n8n entrypoint script
