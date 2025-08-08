@@ -5,7 +5,6 @@ USER root
 # Install Chrome dependencies and Chrome
 RUN apk add --no-cache \
     chromium \
-    chromium-chromedriver \
     nss \
     freetype \
     harfbuzz \
