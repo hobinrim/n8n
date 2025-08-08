@@ -8,14 +8,12 @@ RUN apk add --no-cache \
     chromium-chromedriver \
     nss \
     freetype \
-    freetype-dev \
     harfbuzz \
     ca-certificates \
     ttf-freefont \
     udev \
     ttf-liberation \
     font-noto \
-    font-noto-cjk \
     font-noto-emoji \
     libx11 \
     libxcomposite \
@@ -26,7 +24,7 @@ RUN apk add --no-cache \
     libcups \
     libasound \
     libgbm \
-    gtk+3.0 \
+    gtk+3 \
     nspr
 
 # Tell Puppeteer to use installed Chrome instead of downloading it
