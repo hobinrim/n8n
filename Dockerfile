@@ -18,13 +18,12 @@ RUN apk add --no-cache \
     libxcomposite \
     libxdamage \
     libxrandr \
-    atk \
-    at-spi2-atk \
-    cups-libs \
-    alsa-lib \
-    mesa-libgbm \
     gtk+3.0 \
-    nspr
+    nspr \
+    alsa-lib \
+    cups \
+    mesa-dri-gallium \
+    mesa-gl
 
 # Environment variables for Puppeteer
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
