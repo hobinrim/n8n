@@ -18,11 +18,11 @@ RUN apk add --no-cache \
     libxcomposite \
     libxdamage \
     libxrandr \
-    libatk \
-    libatk-bridge \
-    libcups \
-    libasound \
-    libgbm \
+    atk \
+    at-spi2-atk \
+    cups-libs \
+    alsa-lib \
+    mesa-libgbm \
     gtk+3.0 \
     nspr
 
